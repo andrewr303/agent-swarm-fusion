@@ -1,0 +1,35 @@
+{
+  "run_id": "sidekick-example",
+  "task": "Explore a defect, implement the lead-reviewed fix and verify it",
+  "workspace": ".",
+  "form": "sidekick",
+  "leadership": "sidekick",
+  "roster": [
+    {"id": "lead", "provider": "native", "model": "REPLACE_WITH_SELECTED_LEAD_MODEL", "role": "lead"},
+    {"id": "sidekick", "provider": "native", "model": "REPLACE_WITH_SELECTED_WORKER_MODEL", "role": "worker"}
+  ],
+  "jobs": [
+    {
+      "id": "explore",
+      "assigned_to": "sidekick",
+      "goal": "Locate the defect and return concise source evidence and a proposed fix for lead review",
+      "reads": ["src", "tests"],
+      "writes": [],
+      "checks": [],
+      "constraints": ["Read only; do not choose a new architecture"],
+      "dependencies": [],
+      "success_criteria": ["A specific failure path, source locations and proposed check are reported"]
+    },
+    {
+      "id": "implement",
+      "assigned_to": "sidekick",
+      "goal": "Implement the fix recorded by the lead in the run's shared context after accepting exploration",
+      "reads": ["src", "tests"],
+      "writes": ["src", "tests"],
+      "checks": ["python -m unittest discover -s tests"],
+      "constraints": ["Preserve the public API", "Escalate if the lead's reviewed plan is missing"],
+      "dependencies": ["explore"],
+      "success_criteria": ["The reproduced defect is fixed and requested regression checks pass"]
+    }
+  ]
+}

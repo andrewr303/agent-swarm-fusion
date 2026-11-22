@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "fusion-coordination": {
+      "command": "python",
+      "args": ["-B", "mcps/fusion-coordination/server.py", "--require-board"],
+      "cwd": ".",
+      "env": {"PYTHONUTF8": "1"}
+    },
+    "fusion-board": {
+      "command": "python",
+      "args": ["-B", "mcps/fusion-board/server.py"],
+      "cwd": ".",
+      "env": {"PYTHONUTF8": "1"}
+    }
+  }
+}

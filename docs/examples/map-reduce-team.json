@@ -1,0 +1,17 @@
+{
+  "run_id": "map-reduce-example",
+  "task": "Inspect two independent subsystems and consolidate an evidence-based change plan",
+  "workspace": ".",
+  "form": "map-reduce",
+  "leadership": "idiot-boss",
+  "roster": [
+    {"id": "lead", "provider": "native", "model": "REPLACE_WITH_SELECTED_LEAD_MODEL", "role": "lead"},
+    {"id": "expert-a", "provider": "native", "model": "REPLACE_WITH_SELECTED_EXPERT_MODEL", "role": "worker"},
+    {"id": "expert-b", "provider": "native", "model": "REPLACE_WITH_SELECTED_EXPERT_MODEL", "role": "worker"}
+  ],
+  "jobs": [
+    {"id": "map-api", "assigned_to": "expert-a", "goal": "Inspect API behavior and identify verified defects", "reads": ["src/api"], "writes": [], "checks": [], "success_criteria": ["Source-backed findings with concrete repro or verification gaps"]},
+    {"id": "map-storage", "assigned_to": "expert-b", "goal": "Inspect storage behavior and identify verified defects", "reads": ["src/storage"], "writes": [], "checks": [], "success_criteria": ["Source-backed findings with concrete repro or verification gaps"]},
+    {"id": "reduce", "assigned_to": "expert-a", "goal": "Consolidate accepted findings, preserving conflicts and missing evidence", "reads": ["src"], "writes": [], "checks": [], "success_criteria": ["Prioritized plan ties each proposed change to evidence and verification"]}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "fusion-coordination": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-B", "${PLUGIN_ROOT}/mcps/fusion-coordination/server.py", "--require-board"],
+      "env": {"PYTHONUTF8": "1"}
+    },
+    "fusion-board": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-B", "${PLUGIN_ROOT}/mcps/fusion-board/server.py"],
+      "env": {"PYTHONUTF8": "1"}
+    }
+  }
+}

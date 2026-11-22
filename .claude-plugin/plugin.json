@@ -1,0 +1,43 @@
+{
+  "name": "fusion",
+  "displayName": "Fusion",
+  "version": "3.3.0+swarm",
+  "description": "Composable coding swarms: 16 forms, six workflows, Sidekick and genius/idiot boss, durable communication, fenced host execution, exact artifact reviews and project knowledge. Explicit selected models; no implicit Claude or CLI fallback. Includes nested AndrewCode Hive and existing graph/council contracts.",
+  "author": {
+    "name": "Andrew",
+    "url": "https://github.com/nyldn"
+  },
+  "license": "MIT",
+  "keywords": [
+    "multi-llm",
+    "multi-model",
+    "fusion",
+    "council",
+    "swarm",
+    "debate",
+    "orchestration",
+    "claude-plugin",
+    "copilot",
+    "opencode",
+    "grok",
+    "metaloop",
+    "board-advisor",
+    "fable",
+    "antigravity",
+    "tiered-swarm",
+    "hive",
+    "andrewcode",
+    "nested-swarm",
+    "astra",
+    "board",
+    "sidekick",
+    "genius-boss",
+    "idiot-boss",
+    "coding-teams",
+    "durable-inbox",
+    "swarm-composer",
+    "candidate-review",
+    "project-knowledge",
+    "run-supervision"
+  ]
+}

@@ -1,0 +1,49 @@
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak
+config/.backups/
+
+# Local Fusion runtime state & ephemeral worktrees
+.fusion/
+*.db
+*.db-shm
+*.db-wal
+board.wakeup
+
+# External / reference repositories & vendor trees (excluded from agent-fusion repo)
+kimi-code/
+.council-clones/
+OpenSwarm/
+agency-swarm-main/
+agmsg/
+andrewagent/
+cccc/
+cli-agent-orchestrator/
+cli-agent-orchestrator-main/
+graph/
+metaloop/
+research/
+terminals/
+.acceptances/
+.omc/
+.repowise/
+ANDREWAGENT.md
+ANDREWAGENT_PROMPT.md
+
+# Ignore external MCP vendor directories and keep Fusion's launchers.
+mcps/*
+!mcps/fusion-coordination/
+!mcps/fusion-board/
+mcps/fusion-board/*
+!mcps/fusion-board/server.py

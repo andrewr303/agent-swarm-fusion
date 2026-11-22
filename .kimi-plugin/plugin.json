@@ -1,0 +1,41 @@
+{
+  "name": "fusion",
+  "version": "3.3.0+swarm",
+  "description": "Composable coding swarms: 16 forms, six workflows, Sidekick and genius/idiot boss, durable communication, fenced host execution, exact artifact reviews and project knowledge. Explicit selected models; no implicit Claude or CLI fallback. Includes nested AndrewCode Hive and existing graph/council contracts.",
+  "author": {
+    "name": "Andrew"
+  },
+  "license": "MIT",
+  "keywords": [
+    "multi-llm",
+    "multi-model",
+    "fusion",
+    "council",
+    "swarm",
+    "hive",
+    "andrewcode",
+    "nested-swarm",
+    "astra",
+    "board",
+    "kimi",
+    "sidekick",
+    "genius-boss",
+    "idiot-boss",
+    "coding-teams",
+    "durable-inbox",
+    "swarm-composer",
+    "candidate-review",
+    "project-knowledge",
+    "run-supervision"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "systemPromptPath": "./SYSTEM.md",
+  "skillInstructions": "Fusion is dormant until invoked. Route native coding to fusion-sidekick or fusion-team; preserve the selected host and explicit worker roster. Preparation is not execution. Use durable inboxes and accepted task handoffs. Never invoke Claude/Fable without an explicit request. Existing nested hive workers are real AndrewCode processes; absent is not agreement. Resolve FUSION_PLUGIN_ROOT two levels above skills/fusion-orchestrate/SKILL.md.",
+  "interface": {
+    "displayName": "Fusion",
+    "shortDescription": "Composable coding swarms and durable execution control.",
+    "longDescription": "Composable coding swarms: 16 forms, six workflows, Sidekick and genius/idiot boss, durable communication, fenced host execution, exact artifact reviews and project knowledge. Explicit selected models; no implicit Claude or CLI fallback. Windows installers register AndrewCode, Claude Code and Codex independently; existing graph, council, Hive and MetaLoop contracts remain available.",
+    "developerName": "Andrew"
+  }
+}

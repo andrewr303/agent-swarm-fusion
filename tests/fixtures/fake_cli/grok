@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# fake grok CLI for tests: logs argv + identity env to $FAKE_CLI_LOG; never calls a provider.
+NAME = "grok"
+import json, os, sys
+ARGV = sys.argv[1:]
+LOG = os.environ.get("FAKE_CLI_LOG")
+def log():
+    if LOG:
+        with open(LOG, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"cli": NAME, "argv": ARGV, "agent_id": os.environ.get("FUSION_AGENT_ID"),
+                                 "board_profile": os.environ.get("BOARD_PROFILE"),
+                                 "board": os.environ.get("FUSION_BOARD"), "cwd": os.getcwd()}) + "\n")
+def flag_value(name):
+    return ARGV[ARGV.index(name) + 1] if name in ARGV and ARGV.index(name) + 1 < len(ARGV) else None
+if "--help" in ARGV:
+    fmt = "plain" if os.environ.get("FAKE_NO_JSON") == "1" else "plain|json|streaming-json"
+    print("grok [options]\n  --prompt-file <f>\n  --print <text>\n  --model <m>\n  --add-dir <d>\n  --output-format <fmt>   output format: " + fmt)
+    sys.exit(0)
+log()
+if flag_value("--output-format") == "json":
+    if os.environ.get("FAKE_BAD_JSON") == "1":
+        print("not json at all {")
+    else:
+        print(json.dumps({"result": "hello grok", "model": "grok-observed-1", "session_id": "grok-sess-1",
+                          "usage": {"input_tokens": 3, "output_tokens": 4}}))
+else:
+    print("hello grok plain")

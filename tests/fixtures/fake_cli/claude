@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+# fake claude CLI for tests: logs argv + identity env to $FAKE_CLI_LOG; never calls a provider.
+NAME = "claude"
+import json, os, sys
+ARGV = sys.argv[1:]
+LOG = os.environ.get("FAKE_CLI_LOG")
+def log():
+    if LOG:
+        with open(LOG, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"cli": NAME, "argv": ARGV, "agent_id": os.environ.get("FUSION_AGENT_ID"),
+                                 "board_profile": os.environ.get("BOARD_PROFILE"),
+                                 "board": os.environ.get("FUSION_BOARD"), "cwd": os.getcwd()}) + "\n")
+def flag_value(name):
+    return ARGV[ARGV.index(name) + 1] if name in ARGV and ARGV.index(name) + 1 < len(ARGV) else None
+if "--help" in ARGV:
+    print("claude [options]\n  --output-format <fmt>  text|json|stream-json\n  --effort <e>\n  --no-session-persistence\n  --append-system-prompt <p>\n  --strict-mcp-config\n  --disallowedTools <t>")
+    sys.exit(0)
+sys.stdin.read()
+log()
+if flag_value("--output-format") == "json" and os.environ.get("FAKE_BAD_JSON") == "1":
+    print("not json {")
+elif flag_value("--output-format") == "json":
+    print(json.dumps({"type": "result", "subtype": "success", "is_error": False, "result": "{\"decision\": \"approve\"}",
+                      "session_id": "claude-sess-1", "total_cost_usd": 0.25,
+                      "usage": {"input_tokens": 7, "output_tokens": 9},
+                      "model_usage": {"claude-fable-5": {"inputTokens": 7}}}))
+else:
+    print("{\"decision\": \"approve\"}")

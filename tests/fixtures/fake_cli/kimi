@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# fake kimi CLI for tests: logs argv + identity env to $FAKE_CLI_LOG; never calls a provider.
+NAME = "kimi"
+import json, os, sys
+ARGV = sys.argv[1:]
+LOG = os.environ.get("FAKE_CLI_LOG")
+def log():
+    if LOG:
+        with open(LOG, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"cli": NAME, "argv": ARGV, "agent_id": os.environ.get("FUSION_AGENT_ID"),
+                                 "board_profile": os.environ.get("BOARD_PROFILE"),
+                                 "board": os.environ.get("FUSION_BOARD"), "cwd": os.getcwd()}) + "\n")
+def flag_value(name):
+    return ARGV[ARGV.index(name) + 1] if name in ARGV and ARGV.index(name) + 1 < len(ARGV) else None
+if "--help" in ARGV:
+    if os.environ.get("FAKE_KIMI_LEGACY") == "1":
+        print("kimi [options]\n  -p, --prompt <text>\n  --output-format <fmt>  text")
+    else:
+        print("kimi [options]\n  -p, --prompt <text>\n  --prompt-file <f>\n  --thinking-effort <e>\n  --output-format <fmt>  text|stream-json")
+    sys.exit(0)
+log()
+if flag_value("--output-format") == "stream-json":
+    print(json.dumps({"type": "system", "session_id": "kimi-sess-1"}))
+    print(json.dumps({"role": "assistant", "content": "hello kimi"}))
+else:
+    print("• hello kimi plain")

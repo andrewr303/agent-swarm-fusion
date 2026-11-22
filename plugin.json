@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fusion",
+  "version": "3.3.0+swarm",
+  "description": "Composable coding swarms: 16 forms, six workflows, Sidekick and genius/idiot boss, durable communication, fenced host execution, exact artifact reviews and project knowledge. Explicit selected models; no implicit Claude or CLI fallback. Includes nested AndrewCode Hive and existing graph/council contracts.",
+  "license": "MIT",
+  "keywords": [
+    "multi-llm",
+    "fusion",
+    "hive",
+    "andrewcode",
+    "nested-swarm",
+    "board",
+    "sidekick",
+    "genius-boss",
+    "idiot-boss",
+    "coding-teams",
+    "durable-inbox",
+    "swarm-composer",
+    "candidate-review",
+    "project-knowledge",
+    "run-supervision"
+  ],
+  "extensions": {
+    "com.openai": {
+      "skills": "./skills/",
+      "mcpServers": "./.mcp.json",
+      "interface": {
+        "displayName": "Fusion",
+        "shortDescription": "Composable coding swarms and durable execution control.",
+        "longDescription": "Composable coding swarms: 16 forms, six workflows, Sidekick and genius/idiot boss, durable communication, fenced host execution, exact artifact reviews and project knowledge. Explicit selected models; no implicit Claude or CLI fallback. Windows installers register AndrewCode, Claude Code and Codex independently; existing graph, council, Hive and MetaLoop contracts remain available.",
+        "developerName": "Andrew",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Skills",
+          "Local scripts",
+          "Python backend"
+        ],
+        "defaultPrompt": [
+          "Use Fusion Sidekick for this coding task.",
+          "Design a Fusion coding team with the selected models.",
+          "Use Fusion to get a second opinion.",
+          "Run a Fusion setup check.",
+          "Use a Fusion gate for this change.",
+          "Design a nested Hive swarm for this task."
+        ],
+        "logo": "./assets/chatgpt-icon.png",
+        "composerIcon": "./assets/chatgpt-icon.png",
+        "brandColor": "#2563EB"
+      }
+    }
+  }
+}

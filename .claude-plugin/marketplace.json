@@ -1,0 +1,42 @@
+{
+  "name": "fusion-hive",
+  "owner": {
+    "name": "Andrew",
+    "url": "https://github.com/nyldn"
+  },
+  "metadata": {
+    "description": "Fusion Sidekick, genius/idiot boss and 16 native coding forms with durable agent communication. Also nested AndrewCode Hive, graphs and explicitly requested model councils.",
+    "version": "3.3.0+swarm"
+  },
+  "plugins": [
+    {
+      "name": "fusion",
+      "source": "./",
+      "version": "3.3.0+swarm",
+      "category": "orchestration",
+      "description": "Composable coding swarms, Sidekick and boss modes with durable communication, fenced execution, exact candidate reviews and project knowledge. Includes nested AndrewCode Hive and existing graph/council contracts.",
+      "author": {
+        "name": "Andrew",
+        "url": "https://github.com/nyldn"
+      },
+      "keywords": [
+        "multi-llm",
+        "multi-model",
+        "fusion",
+        "council",
+        "swarm",
+        "orchestration",
+        "metaloop",
+        "board-advisor",
+        "fable",
+        "antigravity",
+        "tiered-swarm",
+        "hive",
+        "andrewcode",
+        "nested-swarm",
+        "astra",
+        "board"
+      ]
+    }
+  ]
+}
