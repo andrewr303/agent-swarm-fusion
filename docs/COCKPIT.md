@@ -2,7 +2,7 @@
 
 The cockpit is the set of local observation tools that ship with the plugin: a loopback web dashboard (`scripts/dashboard_server.py`) and a one-shot terminal snapshot (`python/fusion_swarm/tui.py`). Read this page if you want to start them, understand what they show, or call the dashboard's HTTP API from your own tooling.
 
-Version: `3.3.0+swarm`. Both tools use only the Python standard library. The repository is `agent-mesh`, but the slash command (`/fusion:dashboard`), the Python package (`fusion_swarm`) and the environment variables (`FUSION_*`) keep the `fusion` name.
+Version: `3.3.0+swarm`. Both tools use only the Python standard library. The repository is `agent-swarm-fusion`, but the slash command (`/fusion:dashboard`), the Python package (`fusion_swarm`) and the environment variables (`FUSION_*`) keep the `fusion` name.
 
 ## What it is, and what it is not
 

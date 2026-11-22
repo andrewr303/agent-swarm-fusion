@@ -1,8 +1,8 @@
-# Contributing to agent-mesh
+# Contributing to Agent Swarm Fusion
 
 This file is for people changing the plugin itself: its Python engine, provider scripts, commands, skills and docs. If you only want to install and use it, start with [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md).
 
-The repository is named `agent-mesh`. The plugin id, the `/fusion:*` slash commands, the Python package (`fusion_swarm`), the MCP servers (`fusion-coordination`, `fusion-board`) and the `FUSION_*` environment variables keep the `fusion` name. Do not rename them.
+The repository is named `agent-swarm-fusion`. The plugin id, the `/fusion:*` slash commands, the Python package (`fusion_swarm`), the MCP servers (`fusion-coordination`, `fusion-board`) and the `FUSION_*` environment variables keep the `fusion` name. Do not rename them.
 
 [CLAUDE.md](CLAUDE.md) holds the original developer notes that agents read when working in this repo. This page is the human-facing version and is checked against the code.
 

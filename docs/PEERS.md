@@ -2,7 +2,7 @@
 
 This page explains how Fusion reaches other model CLIs: which providers really exist, how each one is invoked and detected, how models and effort are chosen, and which safety rules gate a call. It is for integrators who dispatch to providers from their own tooling, and for contributors who touch `scripts/providers/` or `python/fusion_swarm/peers/`.
 
-The repository is named `agent-mesh`. The plugin id, slash commands, Python package (`fusion_swarm`) and `FUSION_*` environment variables keep the `fusion` name.
+The repository is named `agent-swarm-fusion`. The plugin id, slash commands, Python package (`fusion_swarm`) and `FUSION_*` environment variables keep the `fusion` name.
 
 Everything here was read from source. Where two sources disagree, the page says so (see [Known inconsistencies](#known-inconsistencies)).
 

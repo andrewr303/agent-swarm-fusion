@@ -2,7 +2,7 @@
 
 This page lists every place Fusion reads configuration from, which layer wins, every environment variable the code reads, and where each module writes state under `.fusion/`. Read it if you want to change a model, point state at another directory, or find out why an override had no effect.
 
-The repository is named `agent-mesh`. The plugin id, the `/fusion:*` commands, the Python package `fusion_swarm`, the MCP servers and the `FUSION_*` variables keep the `fusion` name. This page documents version `3.3.0+swarm`.
+The repository is named `agent-swarm-fusion`. The plugin id, the `/fusion:*` commands, the Python package `fusion_swarm`, the MCP servers and the `FUSION_*` variables keep the `fusion` name. This page documents version `3.3.0+swarm`.
 
 ## What exists and what does not
 

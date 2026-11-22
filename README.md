@@ -1,10 +1,10 @@
-# agent-mesh
+# Agent Swarm Fusion
 
 **Fusion** is a plugin for Claude Code, Codex CLI and AndrewCode that lets the model you are talking to coordinate other models: blind panels, cross-examining councils, scoped coding teams and nested swarms. Every participant is a real command-line program on your machine that Fusion starts and reads back. Fusion holds no model, no API key and no cloud service, and its Python runtime uses only the standard library (Python 3.10 or newer).
 
 Version `3.3.0+swarm`, MIT licensed.
 
-> **Naming.** This repository is `agent-mesh`. The plugin id, the `/fusion:*` slash commands, the Python package `fusion_swarm`, the MCP servers `fusion-coordination` and `fusion-board`, and the `FUSION_*` environment variables keep the `fusion` name.
+> **Naming.** This repository is `agent-swarm-fusion`. The plugin id, the `/fusion:*` slash commands, the Python package `fusion_swarm`, the MCP servers `fusion-coordination` and `fusion-board`, and the `FUSION_*` environment variables keep the `fusion` name.
 
 ## What you can do with it
 
@@ -24,8 +24,8 @@ The repository ships 54 command files under `commands/` and 24 skill directories
 You need Python 3.10 or newer with `sqlite3` and Bash. At least one host CLI (Claude Code, Codex CLI or AndrewCode) is needed for the slash commands. Provider CLIs matter only when you dispatch real work.
 
 ```bash
-git clone https://github.com/andrewr303/agent-mesh.git
-cd agent-mesh
+git clone https://github.com/andrewr303/agent-swarm-fusion.git
+cd agent-swarm-fusion
 bash install.sh --dry-run            # prints the plan, changes nothing
 bash install.sh --hosts claude       # or codex, andrewcode; omit --hosts for all three
 ```
@@ -121,7 +121,7 @@ The full list, defaults and the file each one is read from are in [docs/CONFIGUR
 ## Layout
 
 ```text
-agent-mesh/
+agent-swarm-fusion/
 ├── plugin.json, .claude-plugin/, .codex-plugin/, .kimi-plugin/, kimi.plugin.json   host manifests
 ├── .mcp.json, mcp.json        MCP servers: fusion-coordination, fusion-board
 ├── commands/                  54 /fusion:* command files

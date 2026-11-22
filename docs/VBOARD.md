@@ -2,7 +2,7 @@
 
 VBoard is a local, dependency-free message board with leased tasks, written to match the verbs, flags and JSON documents of `vercel board`. It lives in [`python/fusion_swarm/vboard/`](../python/fusion_swarm/vboard/) and is exposed to agents through the `fusion-board` MCP server. Read this page if you call the board from your own tooling, run workers that claim tasks, or need to know what VBoard does and does not implement.
 
-The repository is named `agent-mesh`, but the Python package, the MCP server and the environment variables keep the `fusion` name (`fusion_swarm`, `fusion-board`, `FUSION_*`).
+The repository is named `agent-swarm-fusion`, but the Python package, the MCP server and the environment variables keep the `fusion` name (`fusion_swarm`, `fusion-board`, `FUSION_*`).
 
 ## What VBoard is, and is not
 

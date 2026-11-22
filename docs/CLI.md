@@ -2,7 +2,7 @@
 
 This page lists every entry point the repository ships, what each one accepts, and which slash command maps to which CLI call. Read it if you drive Fusion from a shell, a script or another tool instead of (or alongside) a host such as Claude Code, Codex CLI or AndrewCode.
 
-The repository is named `agent-mesh`. The commands, scripts, Python package (`fusion_swarm`) and environment variables (`FUSION_*`) keep the `fusion` name.
+The repository is named `agent-swarm-fusion`. The commands, scripts, Python package (`fusion_swarm`) and environment variables (`FUSION_*`) keep the `fusion` name.
 
 Everything below was checked against the source in this repository. Output blocks were produced by running the command in a scratch copy with a scratch `HOME` on 2026-11-22 (Python 3.13, macOS). Commands that would call a paid provider CLI were read from source only and are shown without output.
 
@@ -693,7 +693,7 @@ bash install.sh --dry-run --hosts codex --skip-dependencies
 ```
 
 ```text
-Fusion dry run: source=/path/to/agent-mesh
+Fusion dry run: source=/path/to/agent-swarm-fusion
 Install program and fusion command into /tmp/home/Library/Application Support/Fusion
 Check Python 3.10+, Bash and jq; install missing dependencies where supported.
 Register hosts: codex

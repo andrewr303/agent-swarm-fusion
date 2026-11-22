@@ -1,6 +1,6 @@
 # Credits, Research Provenance & Acknowledgments
 
-This repository is named `agent-mesh`. It publishes the Fusion plugin: the plugin id, the `/fusion:*` slash commands, the `fusion_swarm` Python package and the `FUSION_*` environment variables keep the `fusion` name. "Fusion" below means that plugin.
+This repository is named `agent-swarm-fusion`. It publishes the Fusion plugin: the plugin id, the `/fusion:*` slash commands, the `fusion_swarm` Python package and the `FUSION_*` environment variables keep the `fusion` name. "Fusion" below means that plugin.
 
 Fusion builds on academic research, multi-model systems engineering, and open-source agent orchestration projects. The algorithms and coordination primitives in `python/fusion_swarm/` and `scripts/` are written against the Python 3.10+ standard library and local CLI subprocesses (the installers enforce Python 3.10+, see `install.sh`). This page attributes the papers and repositories that inspired each capability. The one exception to "written here" is the vendored `ultracode/` tree, described in [Vendored code](#vendored-code).
 

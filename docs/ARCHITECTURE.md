@@ -2,7 +2,7 @@
 
 This page explains how the Fusion plugin is built: which layers exist, what each module under `python/fusion_swarm/` does, and how three representative runs move through the code (a runtime form, a Hive swarm and a board claim). Read it if you are changing the code, writing an integration, or trying to work out which layer owns a behavior.
 
-The repository is named `agent-mesh`. The plugin id, slash commands (`/fusion:*`), Python package (`fusion_swarm`), MCP servers (`fusion-coordination`, `fusion-board`) and environment variables (`FUSION_*`) keep the `fusion` name. The version is `3.3.0+swarm` (`plugin.json`, `.claude-plugin/plugin.json`, `scripts/fusion.sh`).
+The repository is named `agent-swarm-fusion`. The plugin id, slash commands (`/fusion:*`), Python package (`fusion_swarm`), MCP servers (`fusion-coordination`, `fusion-board`) and environment variables (`FUSION_*`) keep the `fusion` name. The version is `3.3.0+swarm` (`plugin.json`, `.claude-plugin/plugin.json`, `scripts/fusion.sh`).
 
 For the mental model and vocabulary read [CONCEPTS.md](CONCEPTS.md) first. For the command catalog read [MODES.md](MODES.md).
 

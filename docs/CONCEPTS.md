@@ -2,7 +2,7 @@
 
 This page explains how the Fusion plugin thinks: what it is, the words the rest of the documentation uses, how a task gets routed, and the rules that keep a multi-model run honest. Read it before the mode, forms or peers references if you want the mental model first. It contains no install steps (see [GETTING_STARTED.md](GETTING_STARTED.md)).
 
-A naming note, stated once. The repository is `agent-mesh`. The plugin id, the `/fusion:*` slash commands, the Python package `fusion_swarm`, the MCP servers `fusion-coordination` and `fusion-board`, and the `FUSION_*` environment variables all keep the `fusion` name. The version is `3.3.0+swarm` (`plugin.json`, `.claude-plugin/plugin.json`).
+A naming note, stated once. The repository is `agent-swarm-fusion`. The plugin id, the `/fusion:*` slash commands, the Python package `fusion_swarm`, the MCP servers `fusion-coordination` and `fusion-board`, and the `FUSION_*` environment variables all keep the `fusion` name. The version is `3.3.0+swarm` (`plugin.json`, `.claude-plugin/plugin.json`).
 
 ## What the plugin is
 

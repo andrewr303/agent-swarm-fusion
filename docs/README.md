@@ -1,6 +1,6 @@
 # Documentation index
 
-This is the map of the `agent-mesh` documentation. The repository ships the Fusion plugin, version `3.3.0+swarm`. The plugin id, the `/fusion:*` commands, the `fusion_swarm` package and the `FUSION_*` variables keep the `fusion` name. Start with the [project README](../README.md) if you have not read it, then pick the row that matches what you are doing.
+This is the map of the `agent-swarm-fusion` documentation. The repository ships the Fusion plugin, version `3.3.0+swarm`. The plugin id, the `/fusion:*` commands, the `fusion_swarm` package and the `FUSION_*` variables keep the `fusion` name. Start with the [project README](../README.md) if you have not read it, then pick the row that matches what you are doing.
 
 ## Start here
 
