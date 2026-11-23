@@ -21,7 +21,7 @@ config/.backups/
 *.db-wal
 board.wakeup
 
-# External / reference repositories & vendor trees (excluded from agent-fusion repo)
+# External / reference repositories & vendor trees (excluded from agent-swarm-fusion repo)
 kimi-code/
 .council-clones/
 OpenSwarm/

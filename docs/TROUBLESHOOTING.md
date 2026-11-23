@@ -2,7 +2,7 @@
 
 This page maps a symptom to its cause and fix for the Fusion plugin (version `3.3.0+swarm`). Read it when an install, a provider call, a board, a runtime form or a review run does not do what you expected. Every entry names the file that produces the message or behavior.
 
-The repository is named `agent-mesh`. The plugin id, the `/fusion:*` commands, the Python package (`fusion_swarm`), the MCP servers (`fusion-coordination`, `fusion-board`) and the `FUSION_*` variables keep the `fusion` name.
+The repository is named `agent-swarm-fusion`. The plugin id, the `/fusion:*` commands, the Python package (`fusion_swarm`), the MCP servers (`fusion-coordination`, `fusion-board`) and the `FUSION_*` variables keep the `fusion` name.
 
 ## How the entries were checked
 

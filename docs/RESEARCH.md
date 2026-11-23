@@ -3,7 +3,7 @@
 This page records where the Fusion 3.1 coordination and delegation upgrade came
 from. It is a historical provenance record. The current plugin version is
 `3.3.0+swarm`, and the plugin id, `/fusion:*` commands, `fusion_swarm` package and
-`FUSION_*` variables keep the `fusion` name in the `agent-mesh` repository. For
+`FUSION_*` variables keep the `fusion` name in the `agent-swarm-fusion` repository. For
 credits to libraries and vendored code, see [CREDITS.md](CREDITS.md).
 
 The upgrade adapts coordination and delegation concepts into original stdlib

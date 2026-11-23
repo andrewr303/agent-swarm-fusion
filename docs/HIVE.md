@@ -9,7 +9,7 @@ Read this page if you want to run `/fusion:hive`, write a `SwarmSpec`, or
 integrate with the board that nested workers use. It is the reference for
 `identities.py`, `board.py`, `spawn.py`, `designer.py`, `hive.py` and
 `hive_prompts.py` under [`python/fusion_swarm/`](../python/fusion_swarm/).
-The repository is named `agent-mesh`. The plugin id, slash commands
+The repository is named `agent-swarm-fusion`. The plugin id, slash commands
 (`/fusion:*`), Python package (`fusion_swarm`) and `FUSION_*` environment
 variables keep the `fusion` name.
 

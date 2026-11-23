@@ -2,7 +2,7 @@
 
 This page catalogs every `/fusion:<mode>` slash command: what it does, how the catalog classifies it, when to pick it, and the CLI entry point behind it. Read it to choose a mode, or to find the command-line equivalent when you call Fusion from scripts.
 
-The repository is named `agent-mesh`. The plugin id, the slash commands (`/fusion:*`), the Python package (`fusion_swarm`) and the environment variables (`FUSION_*`) keep the `fusion` name.
+The repository is named `agent-swarm-fusion`. The plugin id, the slash commands (`/fusion:*`), the Python package (`fusion_swarm`) and the environment variables (`FUSION_*`) keep the `fusion` name.
 
 ## Contents
 

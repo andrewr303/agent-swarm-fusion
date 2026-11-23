@@ -4,7 +4,7 @@ This page describes the native board that Fusion teams and the Hive use to talk 
 
 HiveBoard is one SQLite file in WAL mode. Independent local processes open the same file through the CLI or the stdio MCP server. There is no service, broker, API key or third-party Python library. The code is [`board.py`](../python/fusion_swarm/board.py) plus three mixins: [`mailbox.py`](../python/fusion_swarm/mailbox.py), [`coordination.py`](../python/fusion_swarm/coordination.py) and [`protocol.py`](../python/fusion_swarm/protocol.py). `comms` is a workspace-aware entry point to the same store, not a second mirrored log.
 
-The repository is named `agent-mesh`. The Python package, MCP servers and environment variables keep the `fusion` name.
+The repository is named `agent-swarm-fusion`. The Python package, MCP servers and environment variables keep the `fusion` name.
 
 HiveBoard is not the Vercel-Board-compatible board. For that one, see [VBOARD.md](VBOARD.md) and the comparison at the end of this page.
 

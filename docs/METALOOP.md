@@ -10,7 +10,7 @@ Read this page if you plan to run MetaLoop or integrate with its routing and
 budget logic. It describes the Python control plane in `metaloop.py`. The
 host-native protocol, which is how a Claude Code or Codex session drives a run,
 is in [`skills/fusion-metaloop/SKILL.md`](../skills/fusion-metaloop/SKILL.md).
-The repository is named `agent-mesh`. The plugin id, `/fusion:*` commands,
+The repository is named `agent-swarm-fusion`. The plugin id, `/fusion:*` commands,
 `fusion_swarm` package and `FUSION_*` variables keep the `fusion` name.
 
 This is **Phase 1**: real-repo proposal mode, explicit opt-in. The Python module

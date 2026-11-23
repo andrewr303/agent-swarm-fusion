@@ -4,7 +4,7 @@ This page lists the skills that ship in [`skills/`](../skills/), what each one i
 
 A skill is a Markdown file named `SKILL.md` with YAML frontmatter (`name`, `description`) and a prose procedure. The host model reads it and follows it. Most Fusion skills tell the host to call the bundled scripts (`scripts/fusion.sh`, `scripts/swarm.sh`, `python3 -m fusion_swarm ...`). The skill is the program, the scripts are the engine.
 
-The plugin id, the `/fusion:*` commands, the `fusion_swarm` package and the `FUSION_*` variables keep the `fusion` name. The repository is `agent-mesh`.
+The plugin id, the `/fusion:*` commands, the `fusion_swarm` package and the `FUSION_*` variables keep the `fusion` name. The repository is `agent-swarm-fusion`.
 
 ## Overview
 

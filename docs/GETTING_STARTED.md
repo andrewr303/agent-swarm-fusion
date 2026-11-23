@@ -5,7 +5,7 @@ model account. Read it if you use Claude Code, Codex CLI or AndrewCode and want 
 (version `3.3.0+swarm`) available in that host. For the full option list of the installers see
 [INSTALL.md](../INSTALL.md).
 
-The repository is named `agent-mesh`. The plugin id, the slash commands (`/fusion:*`), the Python
+The repository is named `agent-swarm-fusion`. The plugin id, the slash commands (`/fusion:*`), the Python
 package (`fusion_swarm`), the MCP servers (`fusion-coordination`, `fusion-board`) and the
 environment variables (`FUSION_*`) keep the `fusion` name.
 
